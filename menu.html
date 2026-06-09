@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<template class="dish-template">
+    <div class="dishes">
+        <div class="dishes-img">
+            <input type="file" class="upload-img" />
+        </div>
+        <div class="dishes-info">
+            <div class="dishes-name">
+                <input type="text" class="text" placeholder="餐點名稱" />
+            </div>
+            <div class="dishes-price">
+                <input type="number" class="text" placeholder="價錢" />
+            </div>
+        </div>
+
+    </div>
+</template>
+<body>
+
+    <div class="container">
+        <div class="show-page" id="show-page">
+            <div class="menu-header">
+                <button class="backfirst-btn" id="backfirst-btn">返回</button>
+                <button class="edit-btn" id="edit-btn">修改</button>
+            </div>
+            <div class="menu-container" id="menuContainer"></div>
+        </div>
+
+
+        <div id="edit-page" style="display: none;">
+            <div class="menu-header">
+                <button class="edit-btn" id="show-btn">返回</button>
+            </div>
+
+            <div class="menu-container" id="edit-container">
+                <div class="overlay">
+                    <div class="left">
+                        <h3>上傳餐廳名稱與圖片</h3>
+                        <input type="file" class="upload-img" id="restaurantImage" />
+                        <div class="res-name">
+                            <input id="restaurantName" type="text" class="text" placeholder="餐廳名稱" />
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <h3>上傳餐點名稱與圖片</h4>
+                            <div class="dishes-container" id="dishes-container">
+                                <div class="dishes">
+                                    <div class="dishes-img">
+                                        <input type="file" class="upload-img" />
+                                    </div>
+                                    <div class="dishes-info">
+                                        <div class="dishes-name">
+                                            <input id="foodName" type="text" class="text" placeholder="餐點名稱" />
+                                        </div>
+                                        <div class="dishes-price">
+                                            <input id="foodPrice" type="number" class="text" placeholder="價錢" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="button">
+                                    <button class="add-dish" id="add-dish">增加</button>
+                                    <button class="delete-dish">刪除</button>
+
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+                <button class="upload" id="upload">上傳</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./script/restaurants.js"></script>
+    <script src="./script/menu.js"></script>
+</body>
+
+</html>

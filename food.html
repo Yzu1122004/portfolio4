@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>餐廳菜單與購物車</title>
+  <style>
+    .highlighted-food {
+      border: 4px solid gold;
+      box-shadow: 0 0 10px gold;
+      border-radius: 10px;
+    }
+
+    .highlighted-food {
+      border: 4px solid gold;
+      box-shadow: 0 0 15px gold;
+      border-radius: 10px;
+      animation: blink 1s infinite alternate;
+    }
+
+    @keyframes blink {
+      from {
+        box-shadow: 0 0 10px gold;
+      }
+
+      to {
+        box-shadow: 0 0 20px orange;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="./css/food.css">
+</head>
+
+<body>
+
+  <!-- 菜單區 -->
+  <div class="overlay menu-section">
+    <!-- 新增：返回 choose.html 按鈕 -->
+  <button class="back-to-choose" id="back-to-choose-btn">← 返回選擇頁面</button>
+    <h1 id="restaurant-name">餐廳名稱</h1>
+    <div class="description" id="restaurant-description">介紹文字</div>
+    <div class="menu-container" id="menu-container"></div>
+    <button class="checkout" id="show-cart-btn">查看購物車</button>
+  </div>
+
+  <!-- 購物車區 -->
+  <div class="overlay cart-section">
+    <div class="back-button" id="back-to-menu">返回</div>
+    <div class="cart-menu-container" id="cart-menu-container"></div>
+    <div class="total-section">
+      <div class="price-label" id="total-price">價格：$0 元</div><br />
+      <button class="buy-button" id="buy-button">購買</button>
+    </div>
+  </div>
+
+  <script src="./script/restaurants.js"></script>
+  <script src="./script/food.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- 幫我設定按下查看購物車時，網頁中間會出現一個panel -->
+<!-- 我希望我的selectedRestaurant.foods.forEach能夠被點擊，被點擊之後能夠在shopcar.html出現一樣的內容 -->
+<!-- 接收到來自choose.html的對應按鈕之後，會出現對應的菜單，例如choose.html選擇日式料理，會出現日式料理的菜單 -->
+<!-- 我希望我的food.html的const menuContainer = document.getElementById被按下去之後
+，被點選的const menuContainer = document.getElementById的資料會傳送到shopcar.html裡的createMenuItem(不是點選之後直接到shopcar.html)
+，並呈現出來。
+在我點選food.html的結帳時，會到shopcar.html；在我點選shopcar.html的返回時，會回到food.html -->

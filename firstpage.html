@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Food Search</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/firstpage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header id="iyp4" class="head">
+    <div data-type-role="flex-row" id="i01h" class="gjs-plg-flex-row">
+      <div data-type-role="flex-column" id="i6jdt" class="gjs-plg-flex-column">
+        <div id="iis1i">
+          <div id="i8ppd"><strong><span id="iu2tz" class="logotxt">給我吃一口</span></strong></div>
+        </div>
+      </div>
+      <div data-type-role="flex-column" id="ivfuh" class="gjs-plg-flex-column">
+        <a id="iakby" href="./recommed.html">
+          <div id="igzdm" spellcheck="false">
+            <div><em><span id="ikn25"><strong id="iw39j" class="shoppingbtn">留言區</strong></span></em></div>
+          </div>
+        </a>
+        <a id="iakby" href="./choose.html">
+          <div id="igzdm" spellcheck="false">
+            <div><em><span id="ikn25"><strong id="iw39j" class="shoppingbtn">購物車</strong></span></em></div>
+          </div>
+        </a>
+        <a id="iakby-2" href="./wheel.html">
+          <div id="igzdm-2" spellcheck="false">
+            <div id="i4f8t"><em><span id="ib2go"><strong id="ibfbk" class="Turntablebtn">轉一口</strong></span></em></div>
+          </div>
+        </a>
+        <a id="i6uxl" href="./card.html">
+          <div><span id="igrs3" spellcheck="false"><em><strong id="i2g3x" class="Carddrawbtn">抽個牌</strong></em></span>
+          </div>
+        </a>
+        <a id="i6uxl-2" href="./firstpage.html">
+          <div><span id="igrs3-2" spellcheck="false"><em><strong id="i49sp" class="indexbtn">主頁</strong></em></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="background-image">
+
+    <div class="bg-slide"></div>
+    
+    <div class="wrapper">
+      <h1 class="text">給我吃一口</h1>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="text" value="">
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./script/restaurants.js"></script>
+<script src="./script/firstpage.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let savedData = JSON.parse(localStorage.getItem("savedRestaurants")) ?? undefined;
+    if (!savedData) {
+      localStorage.setItem('savedRestaurants', JSON.stringify(restaurants))
+    } else {
+      savedData.forEach(restaurant => {
+        console.log("餐廳:", restaurant.name);
+        restaurant.foods.forEach(food => {
+          console.log("餐點:", food.name);
+        });
+      });
+    }
+  });
+</script>
+
+</html>

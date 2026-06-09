@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  background-image: url("../imgs/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.restaurant-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.restaurant-card {
+  width: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.03);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.restaurant-name {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h1 {
+  color: white;
+}
+
+.head {
+  padding: 50px 50px 35px;
+  height: 5vh;
+}
+
+.logo {
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 700px;
+  padding: 40px 45px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 0;
+  padding: 25px 0;
+}
+
+.paragraph {
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.link {
+  color: #af4e8a;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+span {
+  color: white;
+}
+
+strong {
+  color: white;
+}
+
+.gjs-t-h1 {
+  color: var(--gjs-t-color-secondary);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.button {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  border-width: 0;
+}
+
+.gjs-t-h2 {
+  color: #601843;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+}
+
+.gjs-t-button {
+  background-color: var(--gjs-t-color-primary);
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.gjs-t-link {
+  color: var(--gjs-t-color-primary);
+  text-decoration: underline;
+}
+
+.gjs-t-border {
+  border-radius: 0.3rem;
+  border-color: #e0e0e0;
+}
+
+#iyp4 {
+  background-color: rgba(242, 166, 166, 1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3.5vh;
+  padding-right: 2vw;
+  padding-bottom: 3.5vh;
+  padding-left: 2vw;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.gjs-plg-flex-column {
+  flex-grow: 1;
+}
+
+.gjs-plg-flex-row {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+#i6jdt {
+  flex-basis: 25%;
+}
+
+#ivfuh {
+  flex-basis: 59.87%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#i01h {
+  flex: 1 1 0%;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#iis1i {
+  padding: 0px;
+}
+
+#i8ppd {
+  padding-left: 2vw;
+  text-align: left;
+}
+
+#iu2tz {
+  font-size: 24pt;
+  font-family: arial, helvetica, sans-serif;
+}
+
+#iakby {
+  color: #d983a6;
+  align-self: center;
+  border-left-style: solid;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+#i6uxl {
+  color: #d983a6;
+  align-self: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-left-style: solid;
+}
+
+#igzdm {
+  position: relative;
+}
+
+#ikn25 {
+  color: rgb(0, 0, 0);
+}
+
+#ib2go {
+  color: rgb(0, 0, 0);
+}
+
+#igzdm-2 {
+  position: relative;
+}
+
+#iakby-2 {
+  color: #d983a6;
+  align-self: center;
+  padding-right: 2%;
+  padding-left: 2%;
+  border-left-style: solid;
+}
+
+#igrs3 {
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+
+#igrs3-2 {
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+
+#i6uxl-2 {
+  color: #d983a6;
+  align-self: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
